@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import PropTypes from 'prop-types';
 import PokeList from './components/PokeList';
 
 
@@ -93,7 +92,9 @@ class App extends React.Component {
     this.pokemons= pokemons;
     this.pagePoke= '';
     this.getList= this.getList.bind(this); 
-
+    this.state = {
+      pokemons: pokemons
+    }
   }
 
   getList (event) {
@@ -104,7 +105,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <PokeList />      
+        <PokeList pokemons={this.state.pokemons}/>      
       </div>
     );
   }
@@ -114,20 +115,5 @@ class App extends React.Component {
 
 export default App;
 
- /*  render() {
-    return (
-      <div className="App">
-        <header className="app-title">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          
-        </header>
-      </div>
-    );
-  }
-}
- */
 
 
