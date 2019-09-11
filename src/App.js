@@ -97,11 +97,7 @@ class App extends React.Component {
     }
   }
 
-  getList (event) {
-    const pokeCard =  event.currentTarget.innerHTML;
-    this.pagePoke = pokeCard;
-    
-  }
+
   render() {
     return (
       <div className="App">
