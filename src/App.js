@@ -91,7 +91,6 @@ class App extends React.Component {
     super(props);
     this.pokemons= pokemons;
     this.pagePoke= '';
-    this.getList= this.getList.bind(this); 
     this.state = {
       pokemons: pokemons
     }
