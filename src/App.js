@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import PropTypes from 'prop-types';
 import PokeList from './components/PokeList';
 
 
@@ -103,14 +104,13 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <h1 className="app-title"></h1>
-        <img></img>
-        
+        <PokeList />      
       </div>
     );
   }
 
 }
+
 
 export default App;
 
