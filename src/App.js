@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import PokeList from './components/PokeList';
 
 
 const pokemons = [
@@ -95,8 +96,8 @@ class App extends React.Component {
   }
 
   getList (event) {
-    const pokeList =  event.currentTarget.innerHTML;
-    this.pagePoke = pokeList;
+    const pokeCard =  event.currentTarget.innerHTML;
+    this.pagePoke = pokeCard;
     
   }
   render() {
@@ -104,12 +105,15 @@ class App extends React.Component {
       <div className="App">
         <h1 className="app-title"></h1>
         <img></img>
-        <p className="type-name"></p>
+        
       </div>
     );
   }
 
 }
+
+export default App;
+
  /*  render() {
     return (
       <div className="App">
@@ -125,6 +129,5 @@ class App extends React.Component {
   }
 }
  */
-export default App;
 
 
