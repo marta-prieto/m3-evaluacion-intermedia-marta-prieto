@@ -90,7 +90,6 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.pokemons= pokemons;
-   /*  this.pagePoke= ''; */
     this.state = {
       pokemons: pokemons
     }  
@@ -100,7 +99,9 @@ class App extends React.Component {
     return (
       <div className="App">
         <h1 className="app__title">Mi lista de Pokemons</h1>
+        <div className="name__list">
         <PokeList pokemons={this.state.pokemons}/>      
+        </div>
       </div>
     );
   }

@@ -1,13 +1,54 @@
+.App {
+ 
+}
+.name__list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
 .main-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
   background-color: red;
+  display: flex;
+  justify-content: center;
+}
+
+.app__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .list{
-  background-color: grey;
-  width: 100px;
+  background-color: grey; 
+  display : flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 250px;
+  margin: 15px 15px;
 }
-
+.main-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 80%;
+  
+}
 .list__type {
   list-style: none;
+}
+
+.main-list__type {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
 }
