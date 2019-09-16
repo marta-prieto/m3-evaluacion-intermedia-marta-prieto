@@ -5,7 +5,7 @@ class Pokemon extends React.Component {
     console.log(this.props);
     return (
       <div className="list__pokemons">
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt={this.props.name} className="list__img">{this.props.pokeImg}</img>
+        <img src={this.props.pokeImg} alt={this.props.pokeName} className="list__img"/>
         <div>
           <p className="list__name">{this.props.pokeName}</p>
           <ul className="list__type">

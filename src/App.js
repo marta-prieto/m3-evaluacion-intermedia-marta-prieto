@@ -90,12 +90,11 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.pokemons= pokemons;
-    this.pagePoke= '';
+   /*  this.pagePoke= ''; */
     this.state = {
       pokemons: pokemons
     }  
   }
-
 
   render() {
     return (
