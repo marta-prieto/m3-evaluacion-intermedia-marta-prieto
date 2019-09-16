@@ -2,3 +2,12 @@
   list-style: none;
   background-color: red;
 }
+
+.list{
+  background-color: grey;
+  width: 100px;
+}
+
+.list__type {
+  list-style: none;
+}

@@ -110,7 +110,7 @@ class App extends React.Component {
 
 export default App;
 
-/* Como sugerencia general, comprueba continuamente tu aplicación en Chrome y el terminal dónde arrancas la app con npm start. Si algo falla, hay que arreglarlo antes de continuar.
+/* 
   
   Termina de añadir los elementos finales de la tarjeta de cada Pokemon: un div o article que la englobe (mira el error que tienes en consola) y una imagen para mostrar el Pokemon
   
