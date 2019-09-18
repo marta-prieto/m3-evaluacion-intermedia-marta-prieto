@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './scss/App.scss';
 import PokeList from './components/PokeList';
 
 
@@ -99,7 +99,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <h1 className="app__title">Mi lista de Pokemons</h1>
-        <div className="name__list">
+        <div className="name__pokemon-list">
         <PokeList pokemons={this.state.pokemons}/>      
         </div>
       </div>
@@ -111,25 +111,10 @@ class App extends React.Component {
 
 export default App;
 
-/* 
-  
-  Termina de añadir los elementos finales de la tarjeta de cada Pokemon: un div o article que la englobe (mira el error que tienes en consola) y una imagen para mostrar el Pokemon
-  
-  Termina de añadir los elementos finales de la tarjeta de cada Pokemon: los tipos tienen que ser una lista, no pueden ser h3 sueltos, recuerda que son elementos relacionados. Un OL o UL es lo suyo.
 
-  Utiliza el nombre del Pokemon para el Alt de la imagen
+   
+  /* Usa propTypes para comprobar el tipo de dato de las props
   
-  Usa el id de cada pokemon para el key de react cuando mapeas y creas un listado de componentes
-  
-  Añade estilos (un archivo sass o css por componente)
-  
-  Usa propTypes para comprobar el tipo de dato de las props
-  
-  Revisa los metadatos en index.html (lang, title...)
-  
-  Limpia e indenta el código
-  
-  Publica en Github Pages
-  
-  Elimina archivos sin usar y sus referencias */
+  Publica en Github Pages */
+
 
