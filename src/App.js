@@ -89,10 +89,10 @@ const pokemons = [
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.pokemons= pokemons;
+    this.pokemons = pokemons;
     this.state = {
       pokemons: pokemons
-    }  
+    }
   }
 
   render() {
@@ -100,7 +100,7 @@ class App extends React.Component {
       <div className="App">
         <h1 className="app__title">Mi lista de Pokemons</h1>
         <div className="name__pokemon-list">
-        <PokeList pokemons={this.state.pokemons}/>      
+          <PokeList pokemons={this.state.pokemons} />
         </div>
       </div>
     );
@@ -108,13 +108,8 @@ class App extends React.Component {
 
 }
 
-
 export default App;
 
 
-   
-  /* Usa propTypes para comprobar el tipo de dato de las props
-  
-  Publica en Github Pages */
 
 
