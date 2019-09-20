@@ -7,7 +7,7 @@ class Pokemon extends React.Component {
       <div className="list__pokemons">
         <img src={this.props.pokeImg} alt={this.props.pokeName} className="list__img" />
         <div className="type__box">
-          <h1 className="list__name">{this.props.pokeName}</h1>
+          <h2 className="list__name">{this.props.pokeName}</h2>
           <ol className="main-list__type">
             {this.props.pokeType.map((type, index) => {
               return (
