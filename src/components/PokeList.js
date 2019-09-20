@@ -6,7 +6,7 @@ import Pokemon from './Pokemon';
 class PokeList extends React.Component {
   render() {
     return (
-      <ul className="main-list">
+      <ol className="main-list">
         {this.props.pokemons.map((item, index) => {
           return (
             <li className="list" key={index}>
@@ -20,7 +20,7 @@ class PokeList extends React.Component {
 
         })}
 
-      </ul>
+      </ol>
     );
   }
 }

@@ -5,10 +5,10 @@ class Pokemon extends React.Component {
     console.log(this.props);
     return (
       <div className="list__pokemons">
-        <img src={this.props.pokeImg} alt={this.props.pokeName} className="list__img"/>
+        <img src={this.props.pokeImg} alt={this.props.pokeName} className="list__img" />
         <div className="type__box">
-          <p className="list__name">{this.props.pokeName}</p>
-          <ul className="main-list__type">
+          <h1 className="list__name">{this.props.pokeName}</h1>
+          <ol className="main-list__type">
             {this.props.pokeType.map((type, index) => {
               return (
                 <li className="list__type" key={index}>{type}
@@ -16,7 +16,7 @@ class Pokemon extends React.Component {
               );
 
             })}
-          </ul>
+          </ol>
         </div>
       </div>
     );
