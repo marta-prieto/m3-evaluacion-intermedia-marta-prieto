@@ -7,9 +7,9 @@ class PokeList extends React.Component {
   render() {
     return (
       <ol className="main-list">
-        {this.props.pokemons.map((item, index) => {
+        {this.props.pokemons.map(item => {
           return (
-            <li className="list" key={index}>
+            <li className="list" key={item.id}>
               <Pokemon
                 pokeName={item.name}
                 pokeType={item.types}

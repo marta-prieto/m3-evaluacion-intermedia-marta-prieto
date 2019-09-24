@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 
 class Pokemon extends React.Component {
   render() {
-    console.log(this.props);
     return (
       <div className="list__pokemons">
         <img src={this.props.pokeImg} alt={this.props.pokeName} className="list__img" />
@@ -25,8 +24,8 @@ class Pokemon extends React.Component {
 }
 
 Pokemon.propTypes = {
-  Pokename: PropTypes.string.isRequired,
-  PokeImg: PropTypes.string.isRequired
+  pokeName: PropTypes.string.isRequired,
+  pokeImg: PropTypes.string.isRequired
 };
 
 export default Pokemon; 
